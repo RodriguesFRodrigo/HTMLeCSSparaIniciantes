@@ -39,19 +39,26 @@
         .grid {
             display: grid;
             gap: 20px;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, auto) 1fr;
+            place-items: start;
         }
 
         .titulo {
-            grid-column: 2;
-            text-align: end;
+            grid-column: 1 / -1;
+        }
+
+        .foto {
+            grid-column: 1;
+            grid-row: 2 / 5;
         }
 
         .preco {
             background: #ddd;
             padding: 5px 10px;
             border-radius: 4px;
-            place-self: start end;
+            grid-column: 2;
+            grid-row: 2;
         }
 
         /* .foto {
@@ -69,6 +76,7 @@
             border-radius: 4px;
             font-size: 20px;
             text-align: center;
+            grid-column: 2;
         }
     </style>
 </head>
