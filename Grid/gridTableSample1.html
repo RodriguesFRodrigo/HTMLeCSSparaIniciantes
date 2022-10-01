@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table 1</title>
+    <style>
+        .wrapper {
+            text-align: center;
+        }
+
+        .header {
+            display: grid;
+            grid-template-columns: repeat(8, minmax(0, 1fr));
+            gap: 16px;
+        }
+
+        .header__label {
+            grid-column: span 2 / span 2;
+        }
+
+        .body {
+            display: grid;
+            grid-template-columns: repeat(8, minmax(0, 1fr));
+            gap: 16px;
+        }
+
+        .body__item {
+            grid-column: span 2 / span 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- 4 itens with size 2. grid size has 8-->
+        <div class="header">
+            <p class="header__label">Jogador</p>
+            <p class="header__label">Time</p>
+            <p class="header__label">Posição</p>
+            <p class="header__label">Idade</p>
+        </div>
+        <div class="body">
+            <p class="body__item">Marinho</p>
+            <p class="body__item">Flamengo - RJ</p>
+            <p class="body__item">Atacante</p>
+            <p class="body__item">32</p>
+        </div>
+    </div>
+</body>
+
+</html>
