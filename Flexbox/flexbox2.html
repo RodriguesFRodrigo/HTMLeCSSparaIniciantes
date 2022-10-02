@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedade Flex
+
+    </title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .flex h2 {
+            background: #e7e7e7;
+            padding: 40px;
+            border: 1px solid #d7d7d7;
+            margin: 0;
+            flex-grow: 1;
+            flex-basis: 0;
+            flex-shrink: 1;
+            /* flex: 1; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex">
+        <h2>Procurando Nemo</h2>
+        <h2>Scream</h2>
+        <h2>Fast and Furious</h2>
+        <h2>O Gol</h2>
+    </div>
+</body>
+
+</html>
