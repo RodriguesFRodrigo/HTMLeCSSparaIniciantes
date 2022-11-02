@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Block ocupa 100%, definido antes, então vem acima do texto  */
+        h1::before {
+            /* Conteúdo */
+            content: '';
+            /* Nasce sem display */
+            display: block;
+            width: 40px;
+            height: 4px;
+            background-color: #caf;
+            margin-right: 10px;
+        }
+
+        /* Block ocupa 100%, definido depois, então vem embaixo do texto */
+        h1::after {
+            /* Conteúdo */
+            content: '';
+            /* Nasce sem display */
+            display: block;
+            width: 40px;
+            height: 4px;
+            background-color: #dadada;
+            margin-right: 10px;
+        }
+
+        /*
+        Posicionar usando absolute e relative
+        h1 {
+            position: relative;
+        }
+
+        h1::after {
+            content: '';
+            display: block;
+            width: 40px;
+            height: 4px;
+            background-color: #751;
+            margin-right: 10px;
+            position: absolute;
+            top: 0;
+            left: 80px;
+        }
+        */
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        li:before {
+            content: '';
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background: linear-gradient(#caf, #fff);
+            border: 2px solid #caf;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Nossos Produtos</h1>
+    <ul>
+        <li>Sobre</li>
+        <li>Produtos</li>
+        <li>Contato</li>
+    </ul>
+</body>
+
+</html>

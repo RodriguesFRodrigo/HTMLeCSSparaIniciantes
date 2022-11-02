@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .galeria {
+            display: grid;
+            /* Quando a tela tiver menos que 300px quebra pra uma coluna */
+            /*
+              Caso contrário cria quantas colunas conseguir distribuindo 1fr para toda
+            */
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="galeria">
+        <img src="./America-MG-VERDE-fev2019-01.svg" alt="">
+        <img src="./Athletico-PR.svg" alt="">
+        <img src="./atletico-go-2020.svg" alt="">
+        <img src="./atletico-mg.svg" alt="">
+        <img src="./avai-futebol-clube.svg" alt="">
+        <img src="./botafogo-svg.svg" alt="">
+        <img src="./bragantino.svg" alt="">
+        <img src="./ceara.svg" alt="">
+        <img src="./Corinthians.svg" alt="">
+        <img src="./coritiba.svg" alt="">
+        <img src="./Cuiaba_EC.svg" alt="">
+        <img src="./Flamengo-2018.svg" alt="">
+        <img src="./fluminense.svg" alt="">
+        <img src="./Fortaleza_2021_1.svg" alt="">
+        <img src="./GOIAS-2021.svg" alt="">
+        <img src="./internacional.svg" alt="">
+        <img src="./Juventude-2021-01.svg" alt="">
+        <img src="./Palmeiras.svg" alt="">
+        <img src="./santos.svg" alt="">
+        <img src="./sao-paulo.svg" alt="">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .lista-1 li:nth-child(1) {
+            background-color: red;
+        }
+
+        .lista-1 li:last-child {
+            background-color: blue;
+        }
+
+        .lista-2 li:nth-child(odd) {
+            background-color: #caf;
+        }
+
+        /* dois em dois */
+        .lista-2 li:nth-child(2n) {
+            background-color: #761;
+        }
+
+        /* Podemos informar quais elementos não queremos adicionar estilos */
+        .lista-3 li:not(:first-child, .terceiro) {
+            background-color: #caf;
+        }
+    </style>
+</head>
+
+<body>
+    <ol class="lista-1">
+        <li>SQL</li>
+        <li>PL/SQL</li>
+    </ol>
+    <ol class="lista-2">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Vue</li>
+    </ol>
+    <ol class="lista-3">
+        <li>Inglês</li>
+        <li>Japonês</li>
+        <li class="terceiro">Espanhol</li>
+        <li>Francês</li>
+    </ol>
+</body>
+
+</html>
