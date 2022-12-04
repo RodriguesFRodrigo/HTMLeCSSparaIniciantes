@@ -22,6 +22,10 @@
             border: 2px solid black;
             border-radius: 4px;
         }
+
+        button {
+            cursor: pointer;
+        }
     </style>
 </head>
 
@@ -60,6 +64,16 @@
             <input type="radio" name="entrega" id="loja" value="">
             <label for="loja">Retirar na loja.</label>
         </div>
+
+        <label for="parcelas"></label>
+        <select name="parcelas" id="parcelas">
+            <!-- value é o valor enviado para name -->
+            <option value="">1x de 200</option>
+            <option value="">2x de 100</option>
+            <option value="">4x de 50</option>
+        </select>
+
+        <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
         <button type="submit">Send</button>
     </form>
 </body>

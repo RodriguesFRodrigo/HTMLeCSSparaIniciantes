@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* <element required> ...*/
+        [required] {
+            border: 4px solid tomato;
+        }
+
+        /* <a href="#contato"> ...*/
+        a[href="#contato"] {
+            border: 4px solid greenyellow;
+        }
+
+        /*
+            <p>
+                <element required></element>
+            </p>
+        */
+        /* p [required] {
+            border: 4px solid tomato;
+        } */
+
+        /* Todos os elementos que o valor do atributo href começa com #*/
+        [href^="#"] {
+            background: red;
+        }
+
+        /* Todos os elementos que o valor do atributo href termina com #*/
+        [href$="#"] {
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text">
+    <input type="text" required>
+    <a href="#contato">Contato</a>
+    <a href="https://www.origamid.com.br">Origamid</a>
+</body>
+
+</html>
